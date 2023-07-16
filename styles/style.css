@@ -20,6 +20,11 @@
     color: #727272;
     margin-bottom: 10px;
 }
+.section-titel{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #424242;
+}
 
 /* header section starts here */
 header{
@@ -133,7 +138,70 @@ main{
 /* Team section ends here */
 
 
+/* Features section start's here */
 
+
+/* Features section ends here */
+
+/* facts section start's here */
+
+.facts-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.facts-card-container .card{
+    border-radius: 10px;
+    border: 1px solid darkorange;
+    text-align: center;
+    padding:30px;
+    
+}
+.facts-card-container .facts-titel{
+    font-weight: 600;
+    font-size: 1.25rem;
+    
+}
+.facts-titel{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: 20px;
+}
+.facts-description{
+    color: #727272;
+
+}
+.facts-card-container .card-stats{
+    font-size: 2rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* facts section ends here */
+
+
+/* Sponspors section start's here */
+
+.sponspors{
+    text-align: center;
+
+}
+.sponspors-imgs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+    gap: 40px;
+}
+.sponspors-imgs img{
+    width: 165px;
+}
+
+/* Sponspors section ends here */
 
 
 
@@ -147,16 +215,25 @@ main{
 
     }
     nav,
-    .team-container
+    .team-container,
+    .facts-card-container
     {
+        flex-direction: column;
+    }
+    .sponspors-imgs{
         flex-direction: column;
     }
     .team-img-contaier{
         grid-template-columns: 1fr;
     }
     .team-content-container{
-        padding: 0 20px;
+        padding-left:  10px;
+        padding-right: 10px;
         margin-top: 2rem;
+    }
+    .facts-card-container{
+        padding-left:  5px;
+        padding-right: 5px;
     }
 
 
@@ -176,6 +253,9 @@ main{
     .team-container{
         flex-direction: column;
         
+    }
+    .sponspors-imgs{
+        flex-direction: column;
     }
     .team-content-container{
         margin-top: 2rem;
