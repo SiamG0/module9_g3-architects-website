@@ -16,7 +16,10 @@
     cursor: pointer;
     border: 0;
 }
-
+.primary-discription{
+    color: #727272;
+    margin-bottom: 10px;
+}
 
 /* header section starts here */
 header{
@@ -78,6 +81,62 @@ nav li a{
 
 /* banner section ends here */
 
+/* main section styles start's here */
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+
+
+/* main section styles ends here */
+
+/* Team section start's here */
+.team-container{
+        display: flex;
+        
+        align-items: center;
+        
+    }
+.team-img-contaier{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+   
+
+}
+.team-content-container{
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+.team-titel{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.ttitel1{
+    color: #727272;
+    font-weight: 500;
+}
+.ttitel2{
+    color: #131313;
+    font-weight: 700;
+}
+.ttitel3{
+    color: #ff900e;
+    font-weight: 700;
+   
+}
+
+
+/* Team section ends here */
+
+
+
+
+
+
 /* Responsive media queri start's here */
 
 /* mobile divece start's here */
@@ -87,13 +146,23 @@ nav li a{
         padding: 20px;
 
     }
-    nav{
+    nav,
+    .team-container
+    {
         flex-direction: column;
     }
+    .team-img-contaier{
+        grid-template-columns: 1fr;
+    }
+    .team-content-container{
+        padding: 0 20px;
+        margin-top: 2rem;
+    }
 
-/* mobile divece ends here */
+
    
 }
+/* mobile divece ends here */
 
  /* medium divece start's here */
 
@@ -101,8 +170,15 @@ nav li a{
     header{
         padding: 50px;
     }
-    nav{
+    nav {
         flex-direction: column;
+    }
+    .team-container{
+        flex-direction: column;
+        
+    }
+    .team-content-container{
+        margin-top: 2rem;
     }
     
  }
